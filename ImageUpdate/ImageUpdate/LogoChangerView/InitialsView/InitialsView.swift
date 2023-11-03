@@ -87,11 +87,9 @@ struct InitialsView: View {
                                 viewModel.initialsModel.color = item
                             }, label: {
                                 Text(viewModel.initialsModel.title)
-                                    .frame(maxWidth: .infinity)
-                                    .frame(maxHeight: .infinity)
+                                    .applyProfileImageStyle()
                                     .aspectRatio(1, contentMode: .fit)
                                     .background(item)
-                                    .font(.system(size: 48, weight: .bold))
                                     .clip(with: style)
                             })
                             .buttonStyle(.plain)

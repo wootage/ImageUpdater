@@ -76,8 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				6B1BDB142AF523AE00FEFB2C /* LogoChangerView.swift */,
-				6B1BDB092AF523AE00FEFB2C /* InitialsView */,
 				6B1BDB0D2AF523AE00FEFB2C /* ImageSelection */,
+				6B1BDB092AF523AE00FEFB2C /* InitialsView */,
 				6B1BDB152AF523AE00FEFB2C /* Camera */,
 				6B1BDB192AF523AE00FEFB2C /* Permissions */,
 				6B1BDB1B2AF523AE00FEFB2C /* Extensions */,
@@ -100,8 +100,8 @@
 		6B1BDB092AF523AE00FEFB2C /* InitialsView */ = {
 			isa = PBXGroup;
 			children = (
-				6B1BDB0A2AF523AE00FEFB2C /* ViewModel */,
 				6B1BDB0C2AF523AE00FEFB2C /* InitialsView.swift */,
+				6B1BDB0A2AF523AE00FEFB2C /* ViewModel */,
 			);
 			path = InitialsView;
 			sourceTree = "<group>";
@@ -117,8 +117,8 @@
 		6B1BDB0D2AF523AE00FEFB2C /* ImageSelection */ = {
 			isa = PBXGroup;
 			children = (
-				6B1BDB0E2AF523AE00FEFB2C /* ViewModel */,
 				6B1BDB112AF523AE00FEFB2C /* Views */,
+				6B1BDB0E2AF523AE00FEFB2C /* ViewModel */,
 			);
 			path = ImageSelection;
 			sourceTree = "<group>";
@@ -144,9 +144,9 @@
 		6B1BDB152AF523AE00FEFB2C /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				6B1BDB162AF523AE00FEFB2C /* CameraModel.swift */,
 				6B1BDB172AF523AE00FEFB2C /* CameraView.swift */,
 				6B1BDB182AF523AE00FEFB2C /* CameraLayer.swift */,
+				6B1BDB162AF523AE00FEFB2C /* CameraModel.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";

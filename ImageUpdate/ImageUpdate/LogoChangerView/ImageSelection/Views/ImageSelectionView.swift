@@ -112,11 +112,6 @@ struct ImageSelectionView: View {
             
             Spacer()
         }
-        .onAppear() {
-            PermissionHandler.handler.checkPermissionStatus(.camera, result: { result in
-                print(result)
-            })
-        }
         .photosPicker(isPresented: $isPhotosPickerPresented,
                       selection: $viewModel.imageSelection,
                       matching: .images)
@@ -133,7 +128,15 @@ struct ImageSelectionView: View {
     }
     
     private func openCamera() {
-        isCameraPickerPresented = true
+        PermissionHandler.handler.checkPermissionStatus(.camera, result: { result in
+            
+            guard result else {
+                // redirect to settings
+                return
+            }
+
+            isCameraPickerPresented = true
+        })
     }
     
     private func openPhotos() {
